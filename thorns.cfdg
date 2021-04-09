@@ -1,0 +1,23 @@
+startshape crown
+
+shape crown 
+
+rule 100 {
+    CIRCLE[b 0..1 sat 1 h 0]
+    crown[r 1 x 1..2 y -1..1]
+}
+ 
+rule 20 {
+    CIRCLE[b 0..1 sat 1 h 0]
+    thorn[y -1]
+    crown[r 1 x 1]
+}
+
+rule 0.001 {
+    CIRCLE[]
+}
+
+shape thorn {
+    CIRCLE[]
+    thorn[y -1 s 0.8..0.99]
+}

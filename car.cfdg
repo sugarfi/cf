@@ -1,0 +1,7 @@
+startshape main(0)
+
+shape main(natural n) {
+    SQUARE[r sin(n)]
+    main(n + 1)[x 2]
+    main(n)[y 2] 
+}

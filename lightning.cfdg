@@ -1,0 +1,20 @@
+startshape lightning 
+
+shape lightning
+
+rule 20 {
+    CIRCLE[r -60..60]
+    lightning[y -1 s 0.99 r -10..10]
+}
+
+rule 1 {
+    CIRCLE[r -60..60]
+    lightning[y -1 s 0.5 r -50..-20]
+    lightning[y -1 s 0.99 r -10..10]
+}
+
+rule 1 {
+    CIRCLE[r -60..60]
+    lightning[y -1 s 0.5 r 20..50]
+    lightning[y -1 s 0.99 r -10..10]
+}
